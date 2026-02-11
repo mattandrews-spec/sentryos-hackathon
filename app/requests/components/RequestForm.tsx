@@ -45,8 +45,8 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
   };
 
   return (
-    <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
-      <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">
+    <div className="bg-white dark:bg-[#251e35] rounded-2xl shadow-xl p-8 border border-purple-100 dark:border-purple-900/50">
+      <h2 className="text-2xl font-bold text-purple-900 dark:text-purple-100 mb-6">
         New Customer Request
       </h2>
 
@@ -54,7 +54,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Account */}
           <div>
-            <label htmlFor="account" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label htmlFor="account" className="block text-sm font-medium text-purple-900 dark:text-purple-200 mb-2">
               Account
             </label>
             <input
@@ -64,14 +64,14 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
               required
               value={formData.account}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
+              className="w-full px-4 py-2 border border-purple-200 dark:border-purple-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-[#1a1625] dark:text-purple-100 bg-purple-50/50"
               placeholder="Enter account name"
             />
           </div>
 
           {/* Type */}
           <div>
-            <label htmlFor="type" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label htmlFor="type" className="block text-sm font-medium text-purple-900 dark:text-purple-200 mb-2">
               Type
             </label>
             <select
@@ -80,7 +80,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
               required
               value={formData.type}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
+              className="w-full px-4 py-2 border border-purple-200 dark:border-purple-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-[#1a1625] dark:text-purple-100 bg-purple-50/50"
             >
               <option value="Technical question">Technical question</option>
               <option value="Request for questionnaire">Request for questionnaire</option>
@@ -89,7 +89,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
 
           {/* Assignee */}
           <div>
-            <label htmlFor="assignee" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label htmlFor="assignee" className="block text-sm font-medium text-purple-900 dark:text-purple-200 mb-2">
               Assignee
             </label>
             <select
@@ -98,7 +98,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
               required
               value={formData.assignee}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
+              className="w-full px-4 py-2 border border-purple-200 dark:border-purple-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-[#1a1625] dark:text-purple-100 bg-purple-50/50"
             >
               <option value="Matt">Matt</option>
               <option value="Gene">Gene</option>
@@ -109,7 +109,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
 
           {/* Source */}
           <div>
-            <label htmlFor="source" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label htmlFor="source" className="block text-sm font-medium text-purple-900 dark:text-purple-200 mb-2">
               Source
             </label>
             <select
@@ -118,7 +118,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
               required
               value={formData.source}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
+              className="w-full px-4 py-2 border border-purple-200 dark:border-purple-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-[#1a1625] dark:text-purple-100 bg-purple-50/50"
             >
               <option value="Email">Email</option>
               <option value="Slack">Slack</option>
@@ -127,7 +127,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
 
           {/* Date */}
           <div>
-            <label htmlFor="date" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label htmlFor="date" className="block text-sm font-medium text-purple-900 dark:text-purple-200 mb-2">
               Date
             </label>
             <input
@@ -137,13 +137,13 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
               required
               value={formData.date}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
+              className="w-full px-4 py-2 border border-purple-200 dark:border-purple-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-[#1a1625] dark:text-purple-100 bg-purple-50/50"
             />
           </div>
 
           {/* Requestor's Name */}
           <div>
-            <label htmlFor="requestorName" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label htmlFor="requestorName" className="block text-sm font-medium text-purple-900 dark:text-purple-200 mb-2">
               Requestor&apos;s Name
             </label>
             <input
@@ -153,14 +153,14 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
               required
               value={formData.requestorName}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
+              className="w-full px-4 py-2 border border-purple-200 dark:border-purple-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-[#1a1625] dark:text-purple-100 bg-purple-50/50"
               placeholder="Enter requestor's name"
             />
           </div>
 
           {/* Slack link or Email subject */}
           <div>
-            <label htmlFor="contact" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label htmlFor="contact" className="block text-sm font-medium text-purple-900 dark:text-purple-200 mb-2">
               Slack link or Email subject
             </label>
             <input
@@ -170,7 +170,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
               required
               value={formData.contact}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
+              className="w-full px-4 py-2 border border-purple-200 dark:border-purple-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-[#1a1625] dark:text-purple-100 bg-purple-50/50"
               placeholder="Slack thread link or email subject line"
             />
           </div>
@@ -178,7 +178,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
 
         {/* Notes */}
         <div>
-          <label htmlFor="notes" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+          <label htmlFor="notes" className="block text-sm font-medium text-purple-900 dark:text-purple-200 mb-2">
             Notes
           </label>
           <textarea
@@ -187,7 +187,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
             rows={4}
             value={formData.notes}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
+            className="w-full px-4 py-2 border border-purple-200 dark:border-purple-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-[#1a1625] dark:text-purple-100 bg-purple-50/50"
             placeholder="Additional details or context..."
           />
         </div>
@@ -196,7 +196,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
         <div className="flex justify-end">
           <button
             type="submit"
-            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium rounded-lg transition-all focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Submit Request
           </button>

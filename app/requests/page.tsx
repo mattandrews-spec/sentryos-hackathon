@@ -58,13 +58,13 @@ export default function RequestsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100 dark:from-[#1a1625] dark:via-[#1d1328] dark:to-[#1a1625]">
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-2">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
             Sales Pod Request Manager
           </h1>
-          <p className="text-slate-600 dark:text-slate-400">
+          <p className="text-purple-900 dark:text-purple-200">
             Manage customer requests and assign them to team members
           </p>
         </div>
@@ -72,20 +72,20 @@ export default function RequestsPage() {
         <div className="flex gap-4 mb-6">
           <button
             onClick={() => setView("form")}
-            className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+            className={`px-6 py-2 rounded-lg font-medium transition-all ${
               view === "form"
-                ? "bg-blue-600 text-white"
-                : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
+                ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg"
+                : "bg-white dark:bg-[#251e35] text-purple-700 dark:text-purple-300 hover:bg-purple-50 dark:hover:bg-[#2d2440] border border-purple-200 dark:border-purple-800"
             }`}
           >
             New Request
           </button>
           <button
             onClick={() => setView("list")}
-            className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+            className={`px-6 py-2 rounded-lg font-medium transition-all ${
               view === "list"
-                ? "bg-blue-600 text-white"
-                : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
+                ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg"
+                : "bg-white dark:bg-[#251e35] text-purple-700 dark:text-purple-300 hover:bg-purple-50 dark:hover:bg-[#2d2440] border border-purple-200 dark:border-purple-800"
             }`}
           >
             All Requests ({requests.length})
