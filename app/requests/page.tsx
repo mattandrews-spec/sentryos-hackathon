@@ -11,7 +11,6 @@ export interface Request {
   assignee: "Matt" | "Gene" | "Said" | "Chris S.";
   source: "Email" | "Slack";
   date: string;
-  customer: string;
   requestorName: string;
   contact: string;
   notes: string;

@@ -69,7 +69,7 @@ export default function RequestsList({ requests, onDelete }: RequestsListProps) 
                 </span>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400">
-                {request.customer} • {request.date}
+                {request.date}
               </p>
             </div>
             <button
@@ -112,9 +112,9 @@ export default function RequestsList({ requests, onDelete }: RequestsListProps) 
             </div>
             <div className="md:col-span-2">
               <p className="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">
-                Contact
+                Slack link or Email subject
               </p>
-              <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">
+              <p className="text-sm font-semibold text-slate-900 dark:text-slate-100 break-all">
                 {request.contact}
               </p>
             </div>

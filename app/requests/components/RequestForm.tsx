@@ -16,7 +16,6 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
     assignee: "Matt" as Request["assignee"],
     source: "Email" as Request["source"],
     date: today,
-    customer: "",
     requestorName: "",
     contact: "",
     notes: "",
@@ -32,7 +31,6 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
       assignee: "Matt",
       source: "Email",
       date: today,
-      customer: "",
       requestorName: "",
       contact: "",
       notes: "",
@@ -143,23 +141,6 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
             />
           </div>
 
-          {/* Customer */}
-          <div>
-            <label htmlFor="customer" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-              Customer
-            </label>
-            <input
-              type="text"
-              id="customer"
-              name="customer"
-              required
-              value={formData.customer}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
-              placeholder="Enter customer name"
-            />
-          </div>
-
           {/* Requestor's Name */}
           <div>
             <label htmlFor="requestorName" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
@@ -177,10 +158,10 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
             />
           </div>
 
-          {/* Slack Handle or Email */}
+          {/* Slack link or Email subject */}
           <div>
             <label htmlFor="contact" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-              Slack Handle or Email
+              Slack link or Email subject
             </label>
             <input
               type="text"
@@ -190,7 +171,7 @@ export default function RequestForm({ onSubmit }: RequestFormProps) {
               value={formData.contact}
               onChange={handleChange}
               className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-slate-700 dark:text-slate-100"
-              placeholder="@username or email@example.com"
+              placeholder="Slack thread link or email subject line"
             />
           </div>
         </div>
